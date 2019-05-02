@@ -61,9 +61,9 @@ namespace HashTableGui
                 {
                     Database.InitializeDatabase(file.FileName);
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("\tInvalid file!\nPlease choose a valid file");
+                    MessageBox.Show("\tInvalid file!\nPlease choose a valid file\n" + ex.Message);
                     establishConnectionToolStripMenuItem.PerformClick();
                 }
             }
