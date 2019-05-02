@@ -25,7 +25,7 @@ namespace HashTableGui
                 animal = Database.allAnimals[Convert.ToInt32(idTextBox.Text)];
                 animal.displayInfo();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 if(Database.allAnimals.Count > 0)
                 {
@@ -77,6 +77,7 @@ namespace HashTableGui
         {
             Application.Exit();
         }
+
     }
 }
 //have to add file reading and error checking and read database after file reading instead of on load
